@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Opportunity Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Page Header -->
+    <header>
+        <h1>My Opportunity Tracker</h1>
+
+        <p>
+            Organize your scholarships, internships, mentorships,
+            and training opportunities in one place.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- Opportunity Form -->
+        <section class="form-section">
+
+            <h2>Add a New Opportunity</h2>
+
+            <form id="opportunity-form">
+
+                <div class="form-group">
+                    <label for="opportunity-name">
+                        Opportunity Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="opportunity-name"
+                        placeholder="Enter opportunity name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="opportunity-type">
+                        Opportunity Type
+                    </label>
+
+                    <select id="opportunity-type" required>
+                        <option value="">Select opportunity type</option>
+                        <option value="Scholarship">Scholarship</option>
+                        <option value="Internship">Internship</option>
+                        <option value="Mentorship">Mentorship</option>
+                        <option value="Training">Training</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="application-deadline">
+                        Application Deadline
+                    </label>
+
+                    <input
+                        type="date"
+                        id="application-deadline"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="next-action">
+                        Next Action
+                    </label>
+
+                    <input
+                        type="text"
+                        id="next-action"
+                        placeholder="What do you need to do next?"
+                        required
+                    >
+                </div>
+
+                <button type="submit">
+                    Add Opportunity
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Progress Summary -->
+        <section class="progress-section">
+
+            <h2>My Progress</h2>
+
+            <div class="progress-summary">
+
+                <div class="summary-card">
+                    <h3>Total Opportunities</h3>
+                    <p id="total-opportunities">0</p>
+                </div>
+
+                <div class="summary-card">
+                    <h3>Being Prepared</h3>
+                    <p id="preparing-opportunities">0</p>
+                </div>
+
+                <div class="summary-card">
+                    <h3>Applications Submitted</h3>
+                    <p id="submitted-opportunities">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Opportunity List -->
+        <section class="opportunity-section">
+
+            <h2>My Opportunities</h2>
+
+            <div id="opportunity-list">
+
+                <p id="empty-message">
+                    No opportunities yet. Add your first opportunity
+                    using the form above.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

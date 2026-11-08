@@ -1,0 +1,218 @@
+/* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #243247;
+    line-height: 1.6;
+}
+
+/* Page Header */
+header {
+    background-color: #173b67;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #173b67;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #4a90e2;
+    border-color: #4a90e2;
+}
+
+/* Buttons */
+button {
+    background-color: #2563a6;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #173b67;
+}
+
+/* Progress Summary */
+.progress-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.summary-card {
+    background-color: #eaf2fb;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 5px solid #2563a6;
+}
+
+.summary-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.summary-card p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #173b67;
+}
+
+/* Opportunity List */
+#opportunity-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#empty-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #64748b;
+    padding: 20px;
+}
+
+/* Opportunity Cards */
+.opportunity-card {
+    border: 1px solid #dbe3ee;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.opportunity-card h3 {
+    color: #173b67;
+    margin-bottom: 10px;
+}
+
+.opportunity-card p {
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+/* Status Indicators */
+.status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status-interested {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-preparing {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.status-submitted {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+/* Opportunity Card Controls */
+.opportunity-card select {
+    margin: 10px 0;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    margin-top: 10px;
+}
+
+.delete-button:hover {
+    background-color: #b02a37;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .progress-summary {
+        grid-template-columns: 1fr;
+    }
+
+    #opportunity-list {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
